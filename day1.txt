@@ -1,0 +1,42 @@
+@CiscoWireless:
+config t
+Dot11 ssid wins22wifi
+ authentication open
+ authentication key-management wpa
+ wpa-psk ascii winser123
+ guest-mode
+int dot11Radio 0
+ no shut
+ encryption mode ciphers tkip
+ ssid wins22wifi
+
+config t
+ip routing
+int vlan 10
+ ip Helper-Address 10.22.1.10
+end
+
+001a07047f6a
+001a0709c238
+
+config t
+ip routing
+int vlan 50
+ ip Helper-Address 10.22.1.10
+end
+
+w22.phil22.gov.ph.
+
+cam1.phil22.gov.ph.
+cam2.phil22.gov.ph.
+
+pon1.phil22.gov.ph.
+pon2.phil22.gov.ph.
+
+cme.phil22.gov.ph.
+wap.phil22.gov.ph.
+
+realName	aliases:
+w22		www=web,smtp=sen,pop,imap
+
+w22.phil22.gov.ph

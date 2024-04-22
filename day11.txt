@@ -1,0 +1,18 @@
+cam1.gawako22.com.
+cam2.gawako22.com.
+
+phone1.gawako22.com.
+phone2.gawako22.com.
+
+w22.gawako22.com.
+
+cme.gawako22.com.
+
+wap.gawako22.com.
+crb.gawako22.com.
+
+New-Website -name "PangApat" -hostheader "bago.gawako22.com" -physicalpath "d:\webs\appbiz"
+
+add-DnsServerResourceRecord -zonename gawako22.com -Cname -name bago -hostname w22.gawako22.com
+
+password
